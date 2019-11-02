@@ -117,6 +117,7 @@ def train(model, network_input, network_output):
     callbacks_list = [checkpoint]
 
     model.fit(network_input, network_output, epochs=120, batch_size=128, callbacks=callbacks_list)
+    
 
 if __name__ == '__main__':
     train_network()
